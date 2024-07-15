@@ -147,7 +147,7 @@ header{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     
-    /* border: 2px solid; */
+    
 }
 .team-img img{
     max-width: 100%;
@@ -195,8 +195,10 @@ header{
 /* Features you will love */
 .sec-2{
     display: flex;
-    
     justify-content: space-between;
+    /* gap: 82px; */
+
+    
 }
 
 .sec-2-left{
@@ -207,7 +209,7 @@ header{
     gap: 20px;
 }
 .sec-2-left .sec-2-tit{
-    margin-top: 25px;
+    /* margin-top: 25px; */
     border-left: 5px solid rgb(255, 144, 14); ;
     line-height: 32px;
     padding-left: 20px;
@@ -228,7 +230,7 @@ padding: 20px 22px;
     max-width: 50%;
 }
 .sec-2-right img{
-    width: 105%;
+    width: 100%;
 }
 #experience-badge{
     width: fit-content;
@@ -266,7 +268,7 @@ padding: 20px 22px;
     text-align: center;
     margin-left: 65px; 
     margin-top: -20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 
    }
 
