@@ -10,17 +10,21 @@ body{
 }
 main section{
     max-width: 1100px;
+    margin: 70px auto;
+
 }
-h3{
+h2{
     font-size: 25px;
     font-weight: 700;
 
 }
 p{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     color: #727272;
 }
+/* header */
+
  nav ul a{
     text-decoration: none;
     color: #131313;
@@ -69,6 +73,7 @@ header{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    gap: 20px;
     
 
 }
@@ -80,14 +85,14 @@ header{
     font-weight: 700;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     max-width: 400px;
 }
 .bnr-description{
     max-width: 690px ;
     text-align: center;
 
-    margin-bottom:20px ;
+    /* margin-bottom:20px ; */
 }
 .btn-primary{
     font-family: "Inter", sans-serif;
@@ -102,11 +107,12 @@ header{
     border: none;
     padding:17px 25px;
     border-radius: 8px;
-    margin-bottom:30px;
+    margin-bottom:10px;
 }
 
 /* Responsive Header */
 @media screen and (max-width:576px) {
+    
     .navbar,.navbar ul{
         flex-direction: column;
         gap: 20px;
@@ -114,4 +120,68 @@ header{
         .navbar ul{
             gap: 10px;
         }
+        .banner img{
+            max-width: 90%;
+        }
 }
+
+/* main */
+ 
+/* Teams and teams content style */
+.teams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+.team-img{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+    /* border: 2px solid; */
+}
+.team-img img{
+    max-width: 100%;
+}
+
+.team-img-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 45%;
+    /* border: 2px solid; */
+}
+.quick-list{
+    color: #727272;
+}
+.features{
+    color: #FF900E;
+}
+.team-img-des{
+    max-width: 90%;
+}
+
+/* Responsive Teams Section */
+
+@media screen and (max-width:576px){
+
+    .teams{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .team-img{
+        max-width: 90%;
+    }
+    
+    .team-img-content{
+        align-items: center;
+        max-width: 100%;
+    }
+    .team-img-content .team-img-des{
+ text-align: center;
+    }
+
+}
+
