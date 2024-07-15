@@ -22,6 +22,7 @@ p{
     font-size: 14px;
     font-weight: 400;
     color: #727272;
+    line-height: 25px;
 }
 /* header */
 
@@ -120,8 +121,14 @@ header{
         .navbar ul{
             gap: 10px;
         }
+        .bnr-description{
+            max-width: 90%;
+        }
         .banner img{
             max-width: 95%;
+        }
+        .bnr-title{
+            font-size: 35px;
         }
 }
 
@@ -185,6 +192,96 @@ header{
 
 }
 
+/* Features you will love */
+.sec-2{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.sec-2-left{
+    
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sec-2-left .sec-2-tit{
+    margin-top: 25px;
+    border-left: 5px solid rgb(255, 144, 14); ;
+    line-height: 32px;
+    padding-left: 20px;
+    
+}
+.sec-2-box{
+    border-radius: 8px;
+
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+background: rgb(255, 255, 255);
+padding: 20px 22px;
+}
+.box-head{
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+.sec-2-right{
+    max-width: 50%;
+}
+.sec-2-right img{
+    width: 105%;
+}
+#experience-badge{
+    width: fit-content;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 5px;
+    padding: 25px 30px;
+    margin-left: -65px;
+    margin-top: -50px;
+}
+#year{
+    color: #FFFFFF;
+    font-size: 35px;
+}
+#name{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+/* Responsive Feautures you love....  */
+
+@media screen and (max-width:576px){
+   .sec-2{
+        flex-direction: column-reverse;
+        align-items: center;
+   }
+   .sec-2 img{
+    max-width: 100%;
+   }
+   .sec-2-right{
+    max-width: 90%;
+   }
+   .sec-2-right .sec-2-btn{
+
+    text-align: center;
+    margin-left: 65px; 
+    margin-top: -20px;
+    margin-bottom: 40px;
+
+   }
+
+   .sec-2-left{
+    max-width: 90%;
+   }
+
+}
+
+
+
+
+
+
+
 /* Some Facts */
 .sec-3{
     display: flex;
@@ -194,6 +291,7 @@ header{
 .some-fact-des{
     line-height: 20px;
     margin-bottom: 40px;
+    max-width: 500px;
 }
 .sec-3-cards{
     display: flex;
@@ -266,7 +364,7 @@ header{
     justify-content: space-between;
 }
 .sec-4 .sec-4-icons img{
-    max-width: 12%;
+    max-width: 9%;
     filter: grayscale(100%);
 }
 
@@ -276,6 +374,9 @@ header{
     .sec-4 .sec-4-icons{
         max-width: 90%;
         margin: 0 auto;
+    }
+    .sec-4 .sec-4-des{
+        max-width: 90%;
     }
 }
 
